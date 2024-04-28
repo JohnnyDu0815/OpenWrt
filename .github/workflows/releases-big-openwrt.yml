@@ -68,7 +68,7 @@ jobs:
 
     - name: Package Armvirt as OpenWrt
       if: (!cancelled())
-      uses: ophub/kernel/releases/tag/kernel_dev@main
+      uses: JohnnyDu0815/amlogic-s9xxx-openwrt@main
       env:
         OPENWRT_ARMVIRT: https://github.com/JohnnyDu0815/OpenWrt/releases/download/openwrt_armvirt/openwrt-armvirt-64-generic-rootfs.tar.gz
         PACKAGE_SOC: all
